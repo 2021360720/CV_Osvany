@@ -1,0 +1,105 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background: #f0f4f8;
+}
+
+.sidebar {
+  width: 220px;
+  background: #053B50;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid white;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+}
+
+.sidebar a {
+  color: #ddd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.main-content {
+  margin-left: 240px;
+  padding: 2rem;
+  width: 100%;
+}
+
+header {
+  background: #176B87;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.profile-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-weight: normal;
+  margin-top: 0.3rem;
+}
+
+main section {
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+h3 {
+  color: #053B50;
+  margin-bottom: 0.8rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #053B50;
+  color: white;
+  border-radius: 8px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
